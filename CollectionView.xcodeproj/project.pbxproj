@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		CE21E30D24E0E78D00CB2831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E30C24E0E78D00CB2831 /* AppDelegate.swift */; };
 		CE21E30F24E0E78D00CB2831 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E30E24E0E78D00CB2831 /* SceneDelegate.swift */; };
-		CE21E31124E0E78D00CB2831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E31024E0E78D00CB2831 /* ViewController.swift */; };
 		CE21E31424E0E78D00CB2831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE21E31224E0E78D00CB2831 /* Main.storyboard */; };
 		CE21E31624E0E79000CB2831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE21E31524E0E79000CB2831 /* Assets.xcassets */; };
 		CE21E31924E0E79000CB2831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE21E31724E0E79000CB2831 /* LaunchScreen.storyboard */; };
+		CE21E32124E0EA2400CB2831 /* KyaraCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E32024E0EA2400CB2831 /* KyaraCollectionViewController.swift */; };
+		CE21E32324E0EA5500CB2831 /* KyaraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E32224E0EA5500CB2831 /* KyaraCollectionViewCell.swift */; };
+		CE21E32524E0ED4D00CB2831 /* Kyara.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E32424E0ED4D00CB2831 /* Kyara.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE21E30924E0E78D00CB2831 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE21E30C24E0E78D00CB2831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE21E30E24E0E78D00CB2831 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE21E31024E0E78D00CB2831 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE21E31324E0E78D00CB2831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE21E31524E0E79000CB2831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE21E31824E0E79000CB2831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE21E31A24E0E79000CB2831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE21E32024E0EA2400CB2831 /* KyaraCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyaraCollectionViewController.swift; sourceTree = "<group>"; };
+		CE21E32224E0EA5500CB2831 /* KyaraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyaraCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE21E32424E0ED4D00CB2831 /* Kyara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kyara.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				CE21E30C24E0E78D00CB2831 /* AppDelegate.swift */,
 				CE21E30E24E0E78D00CB2831 /* SceneDelegate.swift */,
-				CE21E31024E0E78D00CB2831 /* ViewController.swift */,
 				CE21E31224E0E78D00CB2831 /* Main.storyboard */,
+				CE21E32024E0EA2400CB2831 /* KyaraCollectionViewController.swift */,
+				CE21E32224E0EA5500CB2831 /* KyaraCollectionViewCell.swift */,
+				CE21E32424E0ED4D00CB2831 /* Kyara.swift */,
 				CE21E31524E0E79000CB2831 /* Assets.xcassets */,
 				CE21E31724E0E79000CB2831 /* LaunchScreen.storyboard */,
 				CE21E31A24E0E79000CB2831 /* Info.plist */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE21E31124E0E78D00CB2831 /* ViewController.swift in Sources */,
+				CE21E32124E0EA2400CB2831 /* KyaraCollectionViewController.swift in Sources */,
+				CE21E32524E0ED4D00CB2831 /* Kyara.swift in Sources */,
 				CE21E30D24E0E78D00CB2831 /* AppDelegate.swift in Sources */,
 				CE21E30F24E0E78D00CB2831 /* SceneDelegate.swift in Sources */,
+				CE21E32324E0EA5500CB2831 /* KyaraCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
