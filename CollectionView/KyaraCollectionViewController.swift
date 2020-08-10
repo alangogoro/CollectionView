@@ -38,14 +38,18 @@ class KyaraCollectionViewController: UICollectionViewController {
 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        /* sender 是 cell，因此可以轉型成自己定義的 Cell 類別
+         * 用 segue.destination 取得 Segue 目的頁面的類別，再指派值過去
+         */
         if let cell = sender as? KyaraCollectionViewCell,
            let indexPath = collectionView.indexPath(for: cell),
            let controller = segue.destination as? KyaraDetailViewController {
+            
             let kyara = kyaras[indexPath.row]
             controller.kyara = kyara
+            
         }
         
     }
