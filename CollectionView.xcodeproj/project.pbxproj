@@ -15,6 +15,7 @@
 		CE21E32124E0EA2400CB2831 /* KyaraCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E32024E0EA2400CB2831 /* KyaraCollectionViewController.swift */; };
 		CE21E32324E0EA5500CB2831 /* KyaraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E32224E0EA5500CB2831 /* KyaraCollectionViewCell.swift */; };
 		CE21E32524E0ED4D00CB2831 /* Kyara.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E32424E0ED4D00CB2831 /* Kyara.swift */; };
+		CE21E32724E0FA4300CB2831 /* KyaraDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21E32624E0FA4300CB2831 /* KyaraDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CE21E32024E0EA2400CB2831 /* KyaraCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyaraCollectionViewController.swift; sourceTree = "<group>"; };
 		CE21E32224E0EA5500CB2831 /* KyaraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyaraCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE21E32424E0ED4D00CB2831 /* Kyara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kyara.swift; sourceTree = "<group>"; };
+		CE21E32624E0FA4300CB2831 /* KyaraDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyaraDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				CE21E31224E0E78D00CB2831 /* Main.storyboard */,
 				CE21E32024E0EA2400CB2831 /* KyaraCollectionViewController.swift */,
 				CE21E32224E0EA5500CB2831 /* KyaraCollectionViewCell.swift */,
+				CE21E32624E0FA4300CB2831 /* KyaraDetailViewController.swift */,
 				CE21E32424E0ED4D00CB2831 /* Kyara.swift */,
 				CE21E31524E0E79000CB2831 /* Assets.xcassets */,
 				CE21E31724E0E79000CB2831 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE21E32724E0FA4300CB2831 /* KyaraDetailViewController.swift in Sources */,
 				CE21E32124E0EA2400CB2831 /* KyaraCollectionViewController.swift in Sources */,
 				CE21E32524E0ED4D00CB2831 /* Kyara.swift in Sources */,
 				CE21E30D24E0E78D00CB2831 /* AppDelegate.swift in Sources */,

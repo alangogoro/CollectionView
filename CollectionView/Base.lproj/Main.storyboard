@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17147" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AZt-4v-b8p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17147" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DiZ-wO-zM6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17120"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Kyara Collection View Controller-->
+        <!--森友會の島民-->
         <scene sceneID="kbI-7j-PU1">
             <objects>
                 <collectionViewController id="AZt-4v-b8p" customClass="KyaraCollectionViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,6 +49,7 @@
                                 <connections>
                                     <outlet property="imageView" destination="z0Z-5R-XSm" id="pos-tp-Pxr"/>
                                     <outlet property="widthConstraint" destination="Je3-VZ-PZU" id="MHN-fP-7lv"/>
+                                    <segue destination="y8F-L9-eV8" kind="show" id="iZm-bW-prp"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -56,14 +58,64 @@
                             <outlet property="delegate" destination="AZt-4v-b8p" id="Y44-os-IgW"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="森友會の島民" id="4UN-KG-0DC">
+                        <barButtonItem key="backBarButtonItem" title="島民" id="lnA-af-x7T"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9q-xN-iOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="185"/>
+            <point key="canvasLocation" x="1523.1884057971015" y="184.82142857142856"/>
+        </scene>
+        <!--Kyara Detail View Controller-->
+        <scene sceneID="d4F-AL-Sxm">
+            <objects>
+                <viewController id="y8F-L9-eV8" customClass="KyaraDetailViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fc3-9Q-bte">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="音音鹿" translatesAutoresizingMaskIntoConstraints="NO" id="hjK-Cd-tgc">
+                                <rect key="frame" x="130" y="375" width="154" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LIA-N1-imL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hjK-Cd-tgc" firstAttribute="centerY" secondItem="LIA-N1-imL" secondAttribute="centerY" id="aks-oO-AQz"/>
+                            <constraint firstItem="hjK-Cd-tgc" firstAttribute="centerX" secondItem="LIA-N1-imL" secondAttribute="centerX" id="iPh-CW-Bha"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5aP-Up-LQM"/>
+                    <connections>
+                        <outlet property="imageView" destination="hjK-Cd-tgc" id="Sm9-xp-N6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDF-kP-gSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419" y="185"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eI9-11-h3h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DiZ-wO-zM6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I4h-us-a1l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AZt-4v-b8p" kind="relationship" relationship="rootViewController" id="opL-3t-xPa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELP-B2-iVg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.04347826086962" y="184.82142857142856"/>
         </scene>
     </scenes>
     <resources>
         <image name="彼得鹿" width="154" height="200"/>
+        <image name="音音鹿" width="154" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

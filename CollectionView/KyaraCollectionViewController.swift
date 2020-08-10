@@ -28,27 +28,28 @@ class KyaraCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
         /* 移除這行程式 ⬇️
          * 因為我們現在要採用 Storyboard 裡設計的 cell
          * 這行程式將變成要另外從程式設計 Cell */
+        // Register cell classes
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
-        // Do any additional setup after loading the view.
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        
+        if let cell = sender as? KyaraCollectionViewCell,
+           let indexPath = collectionView.indexPath(for: cell),
+           let controller = segue.destination as? KyaraDetailViewController {
+            let kyara = kyaras[indexPath.row]
+            controller.kyara = kyara
+        }
+        
     }
-    */
+    
 
     // MARK: UICollectionViewDataSource
 
