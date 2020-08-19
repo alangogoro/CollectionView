@@ -23,7 +23,9 @@ class KyaraCollectionViewController: UICollectionViewController {
          Kyara(name: "阿波羅老鷹", imageName: "阿波羅老鷹"),
          Kyara(name: "牛奶糖狗", imageName: "牛奶糖狗"),
          Kyara(name: "艷后貓", imageName: "艷后貓"),
-         Kyara(name: "音音鹿", imageName: "音音鹿")]
+         Kyara(name: "音音鹿", imageName: "音音鹿"),
+         Kyara(name: "章立娜", imageName: "章立娜"),
+         Kyara(name: "雷妮", imageName: "雷妮")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--森友會の島民-->
+        <!--どうぶつの森-->
         <scene sceneID="kbI-7j-PU1">
             <objects>
                 <collectionViewController id="AZt-4v-b8p" customClass="KyaraCollectionViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +58,7 @@
                             <outlet property="delegate" destination="AZt-4v-b8p" id="Y44-os-IgW"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="森友會の島民" id="4UN-KG-0DC">
+                    <navigationItem key="navigationItem" title="どうぶつの森" id="4UN-KG-0DC">
                         <barButtonItem key="backBarButtonItem" title="島民" id="lnA-af-x7T"/>
                     </navigationItem>
                 </collectionViewController>
